@@ -6,3 +6,7 @@ notifications:
 branches:
   only:
     - master
+
+addons:
+    code_climate:
+        repo_token: 695a68f25eafaa3b581cc46263b802c185df7dd4a4b65e1c491d2b78a49e5670
