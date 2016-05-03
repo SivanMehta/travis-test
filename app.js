@@ -1,15 +1,15 @@
 var morgan = require('morgan');
 var express = require('express');
-var csv = require('fast-csv');
+var path = require('path');
 var app = express();
 
 app.use(morgan('dev'));
-app.set('views', __dirname + '/views');
+app.set('views', path.join(__dirname, "/views"));
 app.set('view engine', 'ejs');
 
 dummy = function(request, response)
 {
-    response.render("index", {data: "sup dude"});
+    response.render("index", {data: request.params});
 }
 
 app.get("*", dummy);
