@@ -7,7 +7,7 @@ function contains(selector, key)
     return browser.query(selector).innerHTML.indexOf(key) >= 0; 
 }
 
-describe("Looking through my personal page", function()
+describe("sivanmehta.github.io", function()
 {
     this.timeout(0);
 
@@ -31,5 +31,14 @@ describe("Looking through my personal page", function()
     {
         assert.isTrue(contains(".row", "me.jpg"));
         done();
+    });
+
+    it("should link to my resume", function(done)
+    {
+        browser.clickLink("a[href ='Sivan_Mehta_Resume.pdf']").then(function()
+        {
+            assert.isTrue(browser.success);
+            done();
+        });
     });
 });
