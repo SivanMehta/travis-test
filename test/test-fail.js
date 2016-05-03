@@ -1,4 +1,3 @@
-var Browser = require("zombie");
 var assert = require('chai').assert;
 
 describe("A failing test example", function()

@@ -5,18 +5,8 @@
   "license": "ISC",
   "main": "server.js",
   "dependencies": {
-    "body-parser": "~1.0.0",
     "chai": "^3.5.0",
-    "chance": "latest",
-    "client-sessions": "latest",
-    "cookie-parser": "~1.0.0",
-    "ejs": "~0.8.5",
-    "express": "~4.0.0",
-    "express-session": "~1.0.0",
-    "method-override": "~1.0.0",
     "mocha": "^2.4.5",
-    "morgan": "~1.0.0",
-    "request": "latest",
     "zombie": "^3.1.x"
   },
   "repository": {
